@@ -1,0 +1,27 @@
+meta {
+  name: Registrar Medico
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/medicos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "nombre": "Rodrigo Lopez",
+    "email": "rodrigo.lopez@vill.med",
+    "documento": "123456",
+    "especialidad": "ORTOPEDIA",
+    "direccion": {
+      "calle": "calle 1",
+      "distrito": "distrito 1",
+      "ciudad": "Lima",
+      "numero": "1",
+      "complemento": "a"
+    }
+  }
+}
