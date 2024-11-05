@@ -2,6 +2,7 @@ create table medicos(
   id BIGSERIAL PRIMARY KEY,
     nombre varchar(100) not null,
     email varchar(100) not null unique,
+    telefono varchar(20) not null,
     documento varchar(6) not null unique,
     especialidad varchar(100) not null,
     calle varchar(100) not null,
