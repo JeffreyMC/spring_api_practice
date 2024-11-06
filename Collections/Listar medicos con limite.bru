@@ -1,0 +1,15 @@
+meta {
+  name: Listar medicos con limite
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/medicos?size=5
+  body: none
+  auth: none
+}
+
+params:query {
+  size: 5
+}
