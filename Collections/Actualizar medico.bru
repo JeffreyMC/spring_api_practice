@@ -1,0 +1,18 @@
+meta {
+  name: Actualizar medico
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8080/medicos
+  body: json
+  auth: none
+}
+
+body:json {
+   {
+        "id": 1,
+        "nombre": "Rodrigo Lopez Castro"
+    }
+}
