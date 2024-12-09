@@ -1,0 +1,23 @@
+meta {
+  name: Registrar Consulta
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/consultas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ2b2xsIG1lZCIsInN1YiI6ImplZmYiLCJpZCI6MSwiZXhwIjoxNzMzNzcxMzE4fQ.hsqjo_ua6enzponmciH9oM-u1gDAnjkPWpVc66WZB9A
+}
+
+body:json {
+  {
+    "idMedico": 1,
+    "idPaciente": 1,
+    "fecha": "2024-12-24T10:00"
+  }
+}
